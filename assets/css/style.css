@@ -14,6 +14,7 @@
   --bg: #000;
   --text: #fff;
   --accent: #c218f0; /* neon magenta */
+  --accent-glow: #ff4df5;
   --soft-accent: #7a4bd9;
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Orbitron', sans-serif;
@@ -23,11 +24,27 @@
    GLOBAL STYLES
 =========================== */
 body {
-  background: var(--bg);
+  background: radial-gradient(circle at top, #111 0, #000 55%) fixed;
   color: var(--text);
   font-family: var(--font-main);
   line-height: 1.6;
   padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 0),
+    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 0);
+  background-size: 3px 3px, 5px 5px;
+  mix-blend-mode: soft-light;
+  opacity: 0.35;
+  z-index: -1;
 }
 
 h1, h2, h3 {
@@ -113,6 +130,40 @@ header img {
   border-radius: 5px;
   width: 0%;
   transition: width 0.5s ease;
+}
+
+/* ===========================
+   NEON SYNTHWAVE MODE
+=========================== */
+body.neon-mode {
+  background: radial-gradient(circle at top, #1a0030 0, #000 60%) fixed;
+}
+
+body.neon-mode header h1,
+body.neon-mode h2,
+body.neon-mode h3 {
+  text-shadow:
+    0 0 6px var(--accent),
+    0 0 14px var(--accent-glow);
+}
+
+body.neon-mode .link-button {
+  background: #12001f;
+  border-color: var(--accent-glow);
+  box-shadow:
+    0 0 8px rgba(194, 24, 240, 0.7),
+    0 0 18px rgba(255, 77, 245, 0.5);
+}
+
+body.neon-mode .song-card {
+  background: #12001f;
+  border-left-color: var(--accent-glow);
+  box-shadow:
+    0 0 10px rgba(194, 24, 240, 0.5);
+}
+
+body.neon-mode .progress-fill {
+  background: linear-gradient(90deg, var(--accent), var(--accent-glow));
 }
 
 /* ===========================
