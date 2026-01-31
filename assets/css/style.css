@@ -167,6 +167,28 @@ body.neon-mode .progress-fill {
 }
 
 /* ===========================
+   TOGGLE BUTTON
+=========================== */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background: #111;
+  border: 1px solid var(--accent);
+  color: var(--text);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+/* ===========================
    FOOTER
 =========================== */
 footer {
