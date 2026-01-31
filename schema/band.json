@@ -1,1 +1,28 @@
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Sound Shallows",
+  "description": "A genre-fluid music project blending industrial, synthwave, classical deconstruction, grunge, and ambient soundscapes.",
+  "genre": [
+    "Industrial",
+    "Synthwave",
+    "Darkwave",
+    "Classical Deconstruction",
+    "Ambient",
+    "Grunge",
+    "Electronic"
+  ],
+  "url": "https://soundshallows.ca",
+  "logo": "https://soundshallows.ca/assets/img/logo.png",
+  "image": "https://soundshallows.ca/assets/img/logo.png",
+  "sameAs": [
+    "https://open.spotify.com/artist/your-id",
+    "https://music.apple.com/your-id",
+    "https://www.youtube.com/your-id",
+    "https://instagram.com/your-id",
+    "https://tiktok.com/@your-id",
+    "https://bandcamp.com/your-id"
+  ]
+}
+</script>
