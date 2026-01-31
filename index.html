@@ -24,6 +24,22 @@ content="https://soundshallows.ca/assets/img/logo.png">
 <body>
   <header>
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
+    <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
+  	<h1>Sound Shallows</h1>
+    <p>Industrial • Synthwave • Classical Deconstruction • Ambient</p>
+  </header>
+
+  <div class="container">
+    <h2>Welcome</h2>
+    <p>
+      Sound Shallows is a multi‑genre project exploring the tension between harshness and calm,
+      blending classical deconstruction, industrial textures, synthwave atmospheres, and ambient relief.
+    </p>
+  </div>
+
+  <footer>
+    © Sound Shallows
+  </footer>
 <script>
   const toggleBtn = document.getElementById('mode-toggle');
 
@@ -45,35 +61,5 @@ content="https://soundshallows.ca/assets/img/logo.png">
     }
   });
 </script>
-
-	<h1>Sound Shallows</h1>
-    <p>Industrial • Synthwave • Classical Deconstruction • Ambient</p>
-  </header>
-
-  <div class="container">
-    <h2>Welcome</h2>
-    <p>
-      Sound Shallows is a multi‑genre project exploring the tension between harshness and calm,
-      blending classical deconstruction, industrial textures, synthwave atmospheres, and ambient relief.
-    </p>
-  </div>
-
-  <footer>
-    © Sound Shallows
-  </footer>
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
-
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('neon-mode');
-
-    // Update button text
-    if (document.body.classList.contains('neon-mode')) {
-      toggleBtn.textContent = 'Standard Mode';
-    } else {
-      toggleBtn.textContent = 'Neon Mode';
-    }
-  });
-</script>  
 </body>
 </html>
