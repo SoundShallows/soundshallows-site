@@ -72,11 +72,12 @@ a:hover {
 }
 
 .soft-divider {
-  height: 10px !important;
-  background: red !important;
-  margin: 1.5rem 0 !important;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: red;
+  margin: 1.5rem 0;
 }
-
 
 /* ===========================
    HEADER + LOGO
