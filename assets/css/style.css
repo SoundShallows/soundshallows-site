@@ -71,8 +71,10 @@ a:hover {
   padding: 20px;
 }
 
-.between-para {
-  margin-top: 0.75rem;
+.soft-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 1.5rem 0;
 }
 
 /* ===========================
