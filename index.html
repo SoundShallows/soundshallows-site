@@ -24,7 +24,28 @@ content="https://soundshallows.ca/assets/img/logo.png">
 <body>
   <header>
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
-    <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
+<script>
+  const toggleBtn = document.getElementById('mode-toggle');
+
+  // Load saved mode
+  if (localStorage.getItem('mode') === 'neon') {
+    document.body.classList.add('neon-mode');
+    toggleBtn.textContent = 'Standard Mode';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('neon-mode');
+
+    if (document.body.classList.contains('neon-mode')) {
+      localStorage.setItem('mode', 'neon');
+      toggleBtn.textContent = 'Standard Mode';
+    } else {
+      localStorage.setItem('mode', 'standard');
+      toggleBtn.textContent = 'Neon Mode';
+    }
+  });
+</script>
+
 	<h1>Sound Shallows</h1>
     <p>Industrial • Synthwave • Classical Deconstruction • Ambient</p>
   </header>
