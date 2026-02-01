@@ -244,11 +244,13 @@ body.neon-mode .progress-fill {
 }
 
 body.neon-mode .flag-row img {
-  background: transparent;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6),
-              0 0 24px rgba(0, 255, 255, 0.4),
-              0 0 36px rgba(0, 255, 255, 0.25);
-  filter: brightness(1.15) saturate(1.2);
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  filter:
+    drop-shadow(0 0 8px rgba(0, 255, 255, 0.7))
+    drop-shadow(0 0 16px rgba(0, 255, 255, 0.5))
+    drop-shadow(0 0 24px rgba(0, 255, 255, 0.3));
 }
 
 /* ===========================
