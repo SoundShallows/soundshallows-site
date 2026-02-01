@@ -143,6 +143,36 @@ header img {
 }
 
 /* ===========================
+   COMPLETED WORKS
+=========================== */
+.song-card.completed {
+  border-left-color: #2ecc71; /* green accent */
+  background: #0f1a0f;        /* subtle green-tinted dark */
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+.song-card.completed h2,
+.song-card.completed p {
+  color: #d8ffd8; /* soft greenish-white text */
+}
+
+/* Optional: Pre-save button */
+.pre-save-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #2ecc71;
+  color: #000;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.pre-save-btn:hover {
+  background: #3ff58a;
+}
+/* ===========================
    NEON SYNTHWAVE MODE
 =========================== */
 body.neon-mode {
