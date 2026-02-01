@@ -116,6 +116,23 @@ header img {
 }
 
 /* ===========================
+   IMAGES
+=========================== */
+.flag-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.flag-row img {
+  width: 150px;
+  height: auto;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* ===========================
    UPCOMING WORKS COMPONENTS
 =========================== */
 .song-card {
@@ -215,6 +232,13 @@ body.neon-mode .song-card {
 
 body.neon-mode .progress-fill {
   background: linear-gradient(90deg, var(--accent), var(--accent-glow));
+}
+
+body.neon-mode .flag-row img {
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6),
+              0 0 24px rgba(0, 255, 255, 0.4),
+              0 0 36px rgba(0, 255, 255, 0.25);
+  filter: brightness(1.15) saturate(1.2);
 }
 
 /* ===========================
