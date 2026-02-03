@@ -1,199 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- SEO -->
-<meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta charset="UTF-8">
+  <title>Upcoming Works • Sound Shallows</title>
 
-<!-- OpenGraph -->
-<meta property="og:title" content="Sound Shallows">
-<meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
-<meta property="og:url" content="https://soundshallows.ca/">
-<meta property="og:type" content="website">
+  <!-- SEO -->
+  <meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sound Shallows">
-<meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta name="twitter:image" content="https://soundshallows.ca/assets/img/logo.png">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sound Shallows">
+  <meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
+  <meta property="og:url" content="https://soundshallows.ca/">
+  <meta property="og:type" content="website">
 
-<meta charset="UTF-8">
-<title>Upcoming Works • Sound Shallows</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="manifest" href="manifest.json">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Shallows">
+  <meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta name="twitter:image" content="https://soundshallows.ca/assets/img/logo.png">
 
-<!-- ===========================
-     STRUCTURED DATA (JSON-LD)
-=========================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Upcoming Works",
-  "itemListElement": [
-    {
-      "@type": "MusicRecording",
-      "position": 1,
-      "name": "Track Title #1",
-      "description": "Short description of the track, its vibe, and what stage it’s in.",
-      "byArtist": {
-        "@type": "MusicGroup",
-        "name": "Sound Shallows"
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/colorblind-safe.css">
+  <link rel="stylesheet" href="assets/css/accessibility-panel.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Upcoming Works",
+    "itemListElement": [
+      {
+        "@type": "MusicRecording",
+        "position": 1,
+        "name": "Track Title #1",
+        "description": "Short description of the track, its vibe, and what stage it’s in.",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Sound Shallows"
+        },
+        "url": "https://soundshallows.ca/upcoming.html"
       },
-      "url": "https://soundshallows.ca/upcoming.html"
-    },
-    {
-      "@type": "MusicRecording",
-      "position": 2,
-      "name": "Track Title #2",
-      "description": "Another description here.",
-      "byArtist": {
-        "@type": "MusicGroup",
-        "name": "Sound Shallows"
-      },
-      "url": "https://soundshallows.ca/upcoming.html"
-    }
-  ]
-}
-</script>
-
+      {
+        "@type": "MusicRecording",
+        "position": 2,
+        "name": "Track Title #2",
+        "description": "Another description here.",
+        "byArtist": {
+          "@type": "MusicGroup",
+          "name": "Sound Shallows"
+        },
+        "url": "https://soundshallows.ca/upcoming.html"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <header>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Panel Trigger + Panel -->
+  <div class="accessibility-toggle" aria-haspopup="true" aria-expanded="false">
+    ⚙ Accessibility
+  </div>
+
+  <div class="accessibility-panel" aria-label="Accessibility Options">
+    <h3>Accessibility Options</h3>
+
+    <label>
+      <input type="checkbox" id="toggle-cb-safe">
+      Colorblind‑Safe Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-reduced-glow">
+      Reduced Glow Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-high-contrast">
+      High Contrast Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-neon-mode">
+      Neon Mode
+    </label>
+
+    <button id="reset-accessibility" class="reset-btn">Reset to Default</button>
+  </div>
+
+  <!-- Header -->
+  <header role="banner">
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
-    <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
-	<h1>Upcoming Works</h1>
-<nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="upcoming.html"  class="active">Upcoming</a></li>
-    <li><a href="links.html">Links</a></li>
-  </ul>
-</nav>	
+    <h1>Upcoming Works</h1>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="upcoming.html" class="active" aria-current="page">Upcoming</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
   </header>
 
-<div class="container">
+  <!-- Main Content -->
+  <main id="main-content" class="container">
 
-  <div class="song-card completed">
-    <h2>My Toaster is Judging Me</h2>
-    <p>A high‑energy and fun track from the point of view of a toaster weighing its morality as it gains intelligence.</p>
-
-    <p>Status: Releases Feb 5, 2026</p> 
-
-    <!-- Optional pre-save link -->
-    <a class="pre-save-btn" href="https://ditto.fm/my-toaster-is-judging-me" target="_blank">Pre‑Save</a>
-  </div>
-
-  <div class="song-card">
-    <h2>Summertime</h2>
-    <p>A relaxed, layered acoustic piece with gentle electric inflections, carrying a warm, drifting energy.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 18%;"></div>
+    <div class="song-card completed">
+      <h2>My Toaster is Judging Me</h2>
+      <p>A high‑energy and fun track from the point of view of a toaster weighing its morality as it gains intelligence.</p>
+      <p>Status: Releases Feb 5, 2026</p>
+      <a class="pre-save-btn" href="https://ditto.fm/my-toaster-is-judging-me" target="_blank">Pre‑Save</a>
     </div>
-    <p>Status: Early Writing</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Grunge (Working Title)</h2>
-    <p>A contrast of calm and anger shaped by classic grunge textures, built around a story of resilience in the face of illness.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 18%;"></div>
+    <div class="song-card">
+      <h2>Summertime</h2>
+      <p>A relaxed, layered acoustic piece with gentle electric inflections, carrying a warm, drifting energy.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 18%;"></div>
+      </div>
+      <p>Status: Early Writing</p>
     </div>
-    <p>Status: Early Writing</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Yes I'm Human</h2>
-    <p>Layered classical pianos and deep bass drive a playful reflection on ego, fragility, and what it means to be human.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 30%;"></div>
+    <div class="song-card">
+      <h2>Grunge (Working Title)</h2>
+      <p>A contrast of calm and anger shaped by classic grunge textures, built around a story of resilience in the face of illness.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 18%;"></div>
+      </div>
+      <p>Status: Early Writing</p>
     </div>
-    <p>Status: Rough Cut</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Dance/Classical (Working Title)</h2>
-    <p>An electronic evolution of the Yes I’m Human framework, blending classical motifs with bright, kinetic energy.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 21%;"></div>
+    <div class="song-card">
+      <h2>Yes I'm Human</h2>
+      <p>Layered classical pianos and deep bass drive a playful reflection on ego, fragility, and what it means to be human.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 30%;"></div>
+      </div>
+      <p>Status: Rough Cut</p>
     </div>
-    <p>Status: Rough Cut</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Hockey (Working Title)</h2>
-    <p>A rock‑leaning track built on chant‑like rhythms and driving percussion, inspired by the pulse of arena anthems.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 21%;"></div>
+    <div class="song-card">
+      <h2>Dance/Classical (Working Title)</h2>
+      <p>An electronic evolution of the Yes I’m Human framework, blending classical motifs with bright, kinetic energy.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 21%;"></div>
+      </div>
+      <p>Status: Rough Cut</p>
     </div>
-    <p>Status: Rough Cut</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Lost in the Rain</h2>
-    <p>A soft, poetic opening track about young love, distance, and letting go, shaped by classical elements and an 80s‑influenced choral lift.
-</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 49%;"></div>
+    <div class="song-card">
+      <h2>Hockey (Working Title)</h2>
+      <p>A rock‑leaning track built on chant‑like rhythms and driving percussion, inspired by the pulse of arena anthems.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 21%;"></div>
+      </div>
+      <p>Status: Rough Cut</p>
     </div>
-    <p>Status: Mid Production</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Lost in the Rain 2</h2>
-    <p>A companion piece in a new key, closing the release with themes of memory, legacy, and the hope of being remembered.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 48%;"></div>
+    <div class="song-card">
+      <h2>Lost in the Rain</h2>
+      <p>A soft, poetic opening track about young love, distance, and letting go, shaped by classical elements and an 80s‑influenced choral lift.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 49%;"></div>
+      </div>
+      <p>Status: Mid Production</p>
     </div>
-    <p>Status: Mid Production</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Into the Sound</h2>
-    <p>An alternative, radio‑style song about loss, grief, and the fear of someone disappearing without a trace.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 24%;"></div>
+    <div class="song-card">
+      <h2>Lost in the Rain 2</h2>
+      <p>A companion piece in a new key, closing the release with themes of memory, legacy, and the hope of being remembered.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 48%;"></div>
+      </div>
+      <p>Status: Mid Production</p>
     </div>
-    <p>Status: Rough Cut</p>
-  </div>
 
-  <div class="song-card">
-    <h2>Savage</h2>
-    <p>A pop‑punk‑leaning track about growing up, pushing back, and finding strength when the odds are against you.</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 37%;"></div>
+    <div class="song-card">
+      <h2>Into the Sound</h2>
+      <p>An alternative, radio‑style song about loss, grief, and the fear of someone disappearing without a trace.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 24%;"></div>
+      </div>
+      <p>Status: Rough Cut</p>
     </div>
-    <p>Status: Rough Cut</p>
-  </div>
 
-</div>
+    <div class="song-card">
+      <h2>Savage</h2>
+      <p>A pop‑punk‑leaning track about growing up, pushing back, and finding strength when the odds are against you.</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 37%;"></div>
+      </div>
+      <p>Status: Rough Cut</p>
+    </div>
 
+  </main>
+
+  <!-- Footer -->
   <footer>
     © Sound Shallows
   </footer>
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
 
-  // Load saved mode
-  if (localStorage.getItem('mode') === 'neon') {
-    document.body.classList.add('neon-mode');
-    toggleBtn.textContent = 'Standard Mode';
-  }
+  <!-- Accessibility Panel Logic -->
+  <script>
+    const panelBtn = document.querySelector('.accessibility-toggle');
+    const panel = document.querySelector('.accessibility-panel');
 
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('neon-mode');
+    panelBtn.addEventListener('click', () => {
+      const isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
+      panelBtn.setAttribute('aria-expanded', !isOpen);
+    });
 
-    if (document.body.classList.contains('neon-mode')) {
-      localStorage.setItem('mode', 'neon');
-      toggleBtn.textContent = 'Standard Mode';
-    } else {
-      localStorage.setItem('mode', 'standard');
-      toggleBtn.textContent = 'Neon Mode';
+    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon-mode'];
+    modes.forEach(mode => {
+      if (localStorage.getItem(mode) === 'true') {
+        document.body.classList.add(mode);
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = true;
+      }
+    });
+
+    function toggleMode(mode) {
+      const checkbox = document.getElementById(`toggle-${mode}`);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          document.body.classList.add(mode);
+          localStorage.setItem(mode, 'true');
+        } else {
+          document.body.classList.remove(mode);
+          localStorage.setItem(mode, 'false');
+        }
+      });
     }
-  });
-</script> 
+
+    toggleMode('cb-safe');
+    toggleMode('reduced-glow');
+    toggleMode('high-contrast');
+    toggleMode('neon-mode');
+
+    document.getElementById('reset-accessibility').addEventListener('click', () => {
+      modes.forEach(mode => {
+        document.body.classList.remove(mode);
+        localStorage.setItem(mode, 'false');
+
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = false;
+      });
+    });
+  </script>
+
 </body>
 </html>
