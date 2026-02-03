@@ -1,0 +1,98 @@
+/* ============================================
+   ACCESSIBILITY LAYER — Sound Shallows
+   Non‑aesthetic, low‑impact improvements
+============================================ */
+
+/* ------------------------------
+   1. Skip Link (invisible until focused)
+------------------------------ */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 10000;
+  border: 2px solid var(--accent-glow);
+  border-radius: 4px;
+  transition: top 0.2s ease;
+  font-family: var(--font-main);
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* ------------------------------
+   2. Global Focus Indicator
+   (Keyboard navigation support)
+------------------------------ */
+:focus-visible {
+  outline: 2px solid var(--accent-glow);
+  outline-offset: 3px;
+}
+
+/* ------------------------------
+   3. Improve Contrast on Red/Green
+   (Minimal aesthetic change)
+------------------------------ */
+
+/* Soft divider: darken red slightly */
+.soft-divider {
+  background: #b30000; /* higher contrast red */
+}
+
+/* Completed song card: slightly deeper green */
+.song-card.completed {
+  border-left-color: #27b863;
+  background: #0d160d;
+}
+
+/* Pre-save button: improve contrast */
+.pre-save-btn {
+  background: #27b863;
+}
+.pre-save-btn:hover {
+  background: #34d97a;
+}
+
+/* ------------------------------
+   4. Navigation Accessibility
+------------------------------ */
+
+/* Active nav item: add underline for non-color users */
+.main-nav a.active {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-glow);
+  text-underline-offset: 4px;
+}
+
+/* Hover still works as normal */
+.main-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ------------------------------
+   5. Button Accessibility
+------------------------------ */
+
+/* Mode toggle: ensure visible focus + ARIA compatibility */
+.toggle-btn:focus-visible {
+  outline: 2px solid var(--accent-glow);
+  outline-offset: 3px;
+}
+
+/* ------------------------------
+   6. Progress Bars (text label support)
+   This doesn't add text — it just ensures
+   any text you add will be readable.
+------------------------------ */
+.progress-fill {
+  color: #000; /* readable if text is added */
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

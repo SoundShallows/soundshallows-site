@@ -1,0 +1,154 @@
+/* ==========================================================
+   COLORBLIND-SAFE MODE — Sound Shallows
+   High-contrast, non-ambiguous color system
+   Activated via: body.cb-safe
+========================================================== */
+
+/* ------------------------------
+   1. Global Adjustments
+------------------------------ */
+body.cb-safe {
+  /* Slightly brighter background for clarity */
+  background: radial-gradient(circle at top, #0d0d0d 0, #000 60%) fixed;
+  color: #ffffff;
+}
+
+/* Remove neon glow for readability */
+body.cb-safe h1,
+body.cb-safe h2,
+body.cb-safe h3 {
+  text-shadow: none;
+}
+
+/* ------------------------------
+   2. Accessible Color System
+   (Blue = success, Yellow = warning, Red = error)
+   Avoids red/green confusion entirely
+------------------------------ */
+
+:root {
+  --cb-blue: #3a8bff;     /* success / completed */
+  --cb-yellow: #ffd447;   /* warning / highlight */
+  --cb-red: #ff4b4b;      /* error / urgent */
+  --cb-outline: #9ecbff;  /* focus outline */
+}
+
+/* ------------------------------
+   3. Navigation
+------------------------------ */
+body.cb-safe .main-nav a {
+  color: var(--cb-yellow);
+}
+
+body.cb-safe .main-nav a.active {
+  text-decoration: underline;
+  text-decoration-color: var(--cb-yellow);
+  text-underline-offset: 4px;
+}
+
+/* Hover state uses shape + underline, not just color */
+body.cb-safe .main-nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--cb-yellow);
+}
+
+/* ------------------------------
+   4. Buttons
+------------------------------ */
+body.cb-safe .toggle-btn {
+  border-color: var(--cb-yellow);
+}
+
+body.cb-safe .toggle-btn:hover {
+  background: var(--cb-yellow);
+  color: #000;
+}
+
+/* ------------------------------
+   5. Song Cards
+------------------------------ */
+
+/* Default song card */
+body.cb-safe .song-card {
+  background: #111;
+  border-left: 4px solid var(--cb-yellow);
+}
+
+/* Completed state — BLUE instead of green */
+body.cb-safe .song-card.completed {
+  background: #0d141f;
+  border-left-color: var(--cb-blue);
+  box-shadow: 0 0 10px rgba(58, 139, 255, 0.4);
+}
+
+body.cb-safe .song-card.completed h2,
+body.cb-safe .song-card.completed p {
+  color: #dbe9ff;
+}
+
+/* ------------------------------
+   6. Progress Bars
+------------------------------ */
+
+/* Track */
+body.cb-safe .progress-bar {
+  background: #2a2a2a;
+}
+
+/* Fill uses blue (safe across all colorblind types) */
+body.cb-safe .progress-fill {
+  background: var(--cb-blue);
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------
+   7. Dividers & Accents
+------------------------------ */
+
+/* Red divider becomes yellow for visibility */
+body.cb-safe .soft-divider {
+  background: var(--cb-yellow);
+}
+
+/* Links */
+body.cb-safe a {
+  color: var(--cb-yellow);
+}
+body.cb-safe a:hover {
+  opacity: 0.9;
+}
+
+/* ------------------------------
+   8. Flags & Images
+------------------------------ */
+body.cb-safe .flag-row img {
+  filter: none; /* remove neon glow for clarity */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------------------
+   9. Focus Indicators
+------------------------------ */
+body.cb-safe :focus-visible {
+  outline: 3px solid var(--cb-outline);
+  outline-offset: 3px;
+}
+
+/* ------------------------------
+   10. Optional: High-Contrast Mode Layer
+   (kept subtle but available)
+------------------------------ */
+body.cb-safe.high-contrast {
+  background: #000;
+  color: #fff;
+}
+
+body.cb-safe.high-contrast .song-card {
+  background: #000;
+  border-left-color: #fff;
+}
