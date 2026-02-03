@@ -19,15 +19,47 @@
 content="https://soundshallows.ca/assets/img/logo.png">
   <meta charset="UTF-8">
   <title>About • Sound Shallows</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/accessibility.css">
+<link rel="stylesheet" href="assets/css/colorblind-safe.css">
+<link rel="stylesheet" href="assets/css/accessibility-panel.css">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Accessibility Panel Trigger + Panel -->
+<div class="accessibility-toggle" aria-haspopup="true" aria-expanded="false">
+  ⚙ Accessibility
+</div>
+
+<div class="accessibility-panel" aria-label="Accessibility Options">
+  <h3>Accessibility Options</h3>
+
+  <label>
+    <input type="checkbox" id="toggle-cb-safe">
+    Colorblind‑Safe Mode
+  </label>
+
+  <label>
+    <input type="checkbox" id="toggle-reduced-glow">
+    Reduced Glow Mode
+  </label>
+
+  <label>
+    <input type="checkbox" id="toggle-high-contrast">
+    High Contrast Mode
+  </label>
+
+  <label>
+    <input type="checkbox" id="toggle-neon">
+    Neon Mode
+  </label>
+</div>
   <header>
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
-     <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
      <h1>About the Band</h1>
   
 <nav class="main-nav">
@@ -41,7 +73,7 @@ content="https://soundshallows.ca/assets/img/logo.png">
   
   </header>
 
-<div class="container">
+<main id="main-content" class="container">
   <h2>Who We Are</h2>
   <p>
     Sound Shallows is an independent electronic music project based in Red Deer, Alberta, blending industrial textures, synthwave atmosphere, classical deconstruction, and ambient tension. The project explores time, identity, and the quiet fear of being forgotten, along with the small rebellions we make against disappearing, even when the struggle is with ourselves.
@@ -117,6 +149,45 @@ content="https://soundshallows.ca/assets/img/logo.png">
       toggleBtn.textContent = 'Neon Mode';
     }
   });
+</script>
+<script>
+const panelBtn = document.querySelector('.accessibility-toggle');
+const panel = document.querySelector('.accessibility-panel');
+
+panelBtn.addEventListener('click', () => {
+  const isOpen = panel.style.display === 'block';
+  panel.style.display = isOpen ? 'none' : 'block';
+  panelBtn.setAttribute('aria-expanded', !isOpen);
+});
+
+/* Load saved preferences */
+const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon'];
+modes.forEach(mode => {
+  if (localStorage.getItem(mode) === 'true') {
+    document.body.classList.add(mode);
+    const checkbox = document.getElementById(`toggle-${mode}`);
+    if (checkbox) checkbox.checked = true;
+  }
+});
+
+/* Toggle logic */
+function toggleMode(mode) {
+  const checkbox = document.getElementById(`toggle-${mode}`);
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      document.body.classList.add(mode);
+      localStorage.setItem(mode, 'true');
+    } else {
+      document.body.classList.remove(mode);
+      localStorage.setItem(mode, 'false');
+    }
+  });
+}
+
+toggleMode('cb-safe');
+toggleMode('reduced-glow');
+toggleMode('high-contrast');
+toggleMode('neon');
 </script>
 </body>
 </html>
