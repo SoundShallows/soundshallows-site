@@ -1,122 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- SEO -->
-<meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-
-<!-- OpenGraph -->
-<meta property="og:title" content="Sound Shallows">
-<meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
-<meta property="og:url" content="https://soundshallows.ca/">
-<meta property="og:type" content="website">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sound Shallows">
-<meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta name="twitter:image" 
-content="https://soundshallows.ca/assets/img/logo.png">
   <meta charset="UTF-8">
   <title>About • Sound Shallows</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sound Shallows">
+  <meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
+  <meta property="og:url" content="https://soundshallows.ca/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Shallows">
+  <meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta name="twitter:image" content="https://soundshallows.ca/assets/img/logo.png">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/colorblind-safe.css">
+  <link rel="stylesheet" href="assets/css/accessibility-panel.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
-  <header>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Panel Trigger + Panel -->
+  <div class="accessibility-toggle" aria-haspopup="true" aria-expanded="false">
+    ⚙ Accessibility
+  </div>
+
+  <div class="accessibility-panel" aria-label="Accessibility Options">
+    <h3>Accessibility Options</h3>
+
+    <label>
+      <input type="checkbox" id="toggle-cb-safe">
+      Colorblind‑Safe Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-reduced-glow">
+      Reduced Glow Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-high-contrast">
+      High Contrast Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-neon-mode">
+      Neon Mode
+    </label>
+
+    <button id="reset-accessibility" class="reset-btn">Reset to Default</button>
+  </div>
+
+  <!-- Header -->
+  <header role="banner">
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
-     <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
-     <h1>About the Band</h1>
-  
-<nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="upcoming.html">Upcoming</a></li>
-    <li><a href="links.html">Links</a></li>
-  </ul>
-</nav>
-  
+    <h1>About the Band</h1>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
   </header>
 
-<div class="container">
-  <h2>Who We Are</h2>
-  <p>
-    Sound Shallows is an independent electronic music project based in Red Deer, Alberta, blending industrial textures, synthwave atmosphere, classical deconstruction, and ambient tension. The project explores time, identity, and the quiet fear of being forgotten, along with the small rebellions we make against disappearing, even when the struggle is with ourselves.
-  </p>
+  <!-- Main Content -->
+  <main id="main-content" class="container">
 
-<div class="flag-row">
-  <img src="assets/img/canadaflag.png"
-       alt="Stylized Canadian flag representing Sound Shallows, a Canadian electronic music project based in Alberta">
+    <h2>Who We Are</h2>
+    <p>
+      Sound Shallows is an independent electronic music project based in Red Deer, Alberta, blending industrial textures, synthwave atmosphere, classical deconstruction, and ambient tension. The project explores time, identity, and the quiet fear of being forgotten, along with the small rebellions we make against disappearing, even when the struggle is with ourselves.
+    </p>
 
-  <img src="assets/img/albertaflag.png"
-       alt="Stylized Alberta flag representing the Alberta-based electronic music project Sound Shallows">
-</div>
- 
- <div style="height: 15px;"></div>
+    <div class="flag-row">
+      <img src="assets/img/canadaflag.png"
+           alt="Stylized Canadian flag representing Sound Shallows, an Alberta-based electronic music project">
 
-  <p>
-    The project grew out of the tension between who we feel ourselves to be and the lives we find ourselves living. It exists in the space where memory feels heavier than expectation, and where reflection can be both comforting and unsettling.
-  </p>
+      <img src="assets/img/albertaflag.png"
+           alt="Stylized Alberta flag representing the Alberta-based electronic music project Sound Shallows">
+    </div>
 
-  <div style="height: 15px;"></div>
+    <div style="height: 15px;"></div>
 
-  <p>
-    Musically, Sound Shallows is built from piano, distortion, and slow-burning tension. Tracks often begin gently and gradually accumulate weight, allowing discomfort and emotion to surface rather than resolving too quickly. Some pieces are warm and minimal. Others are heavy, cinematic, or abrasive. The contrast is intentional.
-  </p>
+    <p>
+      The project grew out of the tension between who we feel ourselves to be and the lives we find ourselves living. It exists in the space where memory feels heavier than expectation, and where reflection can be both comforting and unsettling.
+    </p>
 
-  <div style="height: 15px;"></div>
+    <div style="height: 15px;"></div>
 
-  <p>
-    Each release is part of a larger narrative. Rather than standalone tracks, the music is designed as a series of moments, reflections on memory, identity, and the shifting distance between who we were, who we are, and who we refuse to stop becoming. Motifs reappear, themes evolve, and songs quietly reference one another across releases.
-  </p>
+    <p>
+      Musically, Sound Shallows is built from piano, distortion, and slow-burning tension. Tracks often begin gently and gradually accumulate weight, allowing discomfort and emotion to surface rather than resolving too quickly. Some pieces are warm and minimal. Others are heavy, cinematic, or abrasive. The contrast is intentional.
+    </p>
 
-  <div style="height: 15px;"></div>
+    <div style="height: 15px;"></div>
 
-  <p>
-    Sound Shallows is not an attempt to freeze time or pretend nothing changes. It is an acknowledgement that change is constant, and that creating something honest can be its own form of resistance.
-  </p>
+    <p>
+      Each release is part of a larger narrative. Rather than standalone tracks, the music is designed as a series of moments, reflections on memory, identity, and the shifting distance between who we were, who we are, and who we refuse to stop becoming. Motifs reappear, themes evolve, and songs quietly reference one another across releases.
+    </p>
 
-  <div style="height: 30px;"></div>
+    <div style="height: 15px;"></div>
 
-  <h2>Influences</h2>
-  <p>
-    Classical minimalism, industrial textures, ambient sound design, synth-driven atmospheres, and the emotional weight of 90s alternative music. The project draws from both electronic and acoustic traditions, using contrast as a creative engine.
-  </p>
+    <p>
+      Sound Shallows is not an attempt to freeze time or pretend nothing changes. It is an acknowledgement that change is constant, and that creating something honest can be its own form of resistance.
+    </p>
 
-  <div style="height: 30px;"></div>
+    <div style="height: 30px;"></div>
 
-  <h2>Press Info</h2>
-  <p>
-    High-resolution logo available upon request. Press photos will be added in a future update.
-  </p>
-</div>
+    <h2>Influences</h2>
+    <p>
+      Classical minimalism, industrial textures, ambient sound design, synth-driven atmospheres, and the emotional weight of 90s alternative music. The project draws from both electronic and acoustic traditions, using contrast as a creative engine.
+    </p>
 
+    <div style="height: 30px;"></div>
+
+    <h2>Press Info</h2>
+    <p>
+      High-resolution logo available upon request. Press photos will be added in a future update.
+    </p>
+
+  </main>
+
+  <!-- Footer -->
   <footer>
     © Sound Shallows
   </footer>
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
 
-  // Load saved mode
-  if (localStorage.getItem('mode') === 'neon') {
-    document.body.classList.add('neon-mode');
-    toggleBtn.textContent = 'Standard Mode';
-  }
+  <!-- Accessibility Panel Logic -->
+  <script>
+    const panelBtn = document.querySelector('.accessibility-toggle');
+    const panel = document.querySelector('.accessibility-panel');
 
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('neon-mode');
+    panelBtn.addEventListener('click', () => {
+      const isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
+      panelBtn.setAttribute('aria-expanded', !isOpen);
+    });
 
-    if (document.body.classList.contains('neon-mode')) {
-      localStorage.setItem('mode', 'neon');
-      toggleBtn.textContent = 'Standard Mode';
-    } else {
-      localStorage.setItem('mode', 'standard');
-      toggleBtn.textContent = 'Neon Mode';
+    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon-mode'];
+    modes.forEach(mode => {
+      if (localStorage.getItem(mode) === 'true') {
+        document.body.classList.add(mode);
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = true;
+      }
+    });
+
+    function toggleMode(mode) {
+      const checkbox = document.getElementById(`toggle-${mode}`);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          document.body.classList.add(mode);
+          localStorage.setItem(mode, 'true');
+        } else {
+          document.body.classList.remove(mode);
+          localStorage.setItem(mode, 'false');
+        }
+      });
     }
-  });
-</script>
+
+    toggleMode('cb-safe');
+    toggleMode('reduced-glow');
+    toggleMode('high-contrast');
+    toggleMode('neon-mode');
+
+    document.getElementById('reset-accessibility').addEventListener('click', () => {
+      modes.forEach(mode => {
+        document.body.classList.remove(mode);
+        localStorage.setItem(mode, 'false');
+
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = false;
+      });
+    });
+  </script>
+
 </body>
 </html>
