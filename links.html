@@ -1,126 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- SEO -->
-<meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-
-<!-- OpenGraph -->
-<meta property="og:title" content="Sound Shallows">
-<meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
-<meta property="og:url" content="https://soundshallows.ca/">
-<meta property="og:type" content="website">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sound Shallows">
-<meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
-<meta name="twitter:image" 
-content="https://soundshallows.ca/assets/img/logo.png">
   <meta charset="UTF-8">
   <title>Links • Sound Shallows</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sound Shallows">
+  <meta property="og:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
+  <meta property="og:url" content="https://soundshallows.ca/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Shallows">
+  <meta name="twitter:description" content="Independent electronic music exploring time, identity, memory, and the quiet struggle against disappearing. Built from piano, distortion, and slow-burning tension.">
+  <meta name="twitter:image" content="https://soundshallows.ca/assets/img/logo.png">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/colorblind-safe.css">
+  <link rel="stylesheet" href="assets/css/accessibility-panel.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
-  <header>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Panel Trigger + Panel -->
+  <div class="accessibility-toggle" aria-haspopup="true" aria-expanded="false">
+    ⚙ Accessibility
+  </div>
+
+  <div class="accessibility-panel" aria-label="Accessibility Options">
+    <h3>Accessibility Options</h3>
+
+    <label>
+      <input type="checkbox" id="toggle-cb-safe">
+      Colorblind‑Safe Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-reduced-glow">
+      Reduced Glow Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-high-contrast">
+      High Contrast Mode
+    </label>
+
+    <label>
+      <input type="checkbox" id="toggle-neon-mode">
+      Neon Mode
+    </label>
+
+    <button id="reset-accessibility" class="reset-btn">Reset to Default</button>
+  </div>
+
+  <!-- Header -->
+  <header role="banner">
     <img src="assets/img/logo.png" alt="Sound Shallows Logo">
-    <button id="mode-toggle" class="toggle-btn">Neon Mode</button>
     <h1>Find Us Online</h1>
-	
-<nav class="main-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="upcoming.html">Upcoming</a></li>
-    <li><a href="links.html" class="active">Links</a></li>
-  </ul>
-</nav>
-	
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="links.html" class="active" aria-current="page">Links</a></li>
+      </ul>
+    </nav>
   </header>
 
-<div class="container">
+  <!-- Main Content -->
+  <main id="main-content" class="container">
 
-  <!-- Streaming Platforms -->
-  <a class="link-button" href="https://open.spotify.com/artist/02mrjwbOAOWRJK54kzwUWp?si=p8nRIQCsQMmqHd4RDs9q_Q" target="_blank">
-    🎧 Spotify
-  </a>
+    <!-- Streaming Platforms -->
+    <a class="link-button" href="https://open.spotify.com/artist/02mrjwbOAOWRJK54kzwUWp?si=p8nRIQCsQMmqHd4RDs9q_Q" target="_blank">
+      🎧 Spotify
+    </a>
 
-  <!-- Spotify Embed -->
-  <iframe 
-    style="border-radius:12px; margin-bottom: 30px;" 
-    src="https://open.spotify.com/embed/artist/02mrjwbOAOWRJK54kzwUWp?utm_source=generator&theme=0" 
-    width="100%" 
-    height="352" 
-    frameborder="0" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
-  </iframe>
+    <!-- Spotify Embed -->
+    <iframe
+      style="border-radius:12px; margin-bottom: 30px;"
+      src="https://open.spotify.com/embed/artist/02mrjwbOAOWRJK54kzwUWp?utm_source=generator&theme=0"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
 
-  <a class="link-button" href="https://youtube.com/@soundshallows" target="_blank">
-    ▶️ YouTube
-  </a>
+    <a class="link-button" href="https://youtube.com/@soundshallows" target="_blank">
+      ▶️ YouTube
+    </a>
 
-<!-- YouTube Playlist Embed -->
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=DIseAiSjbM946F2U&amp;list=PLBuc3ArN-pThXzu3tPN5fDT4MoaHHf04L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- YouTube Playlist Embed -->
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/videoseries?si=DIseAiSjbM946F2U&amp;list=PLBuc3ArN-pThXzu3tPN5fDT4MoaHHf04L"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
 
-  <a class="link-button" href="https://music.apple.com/us/artist/sound-shallows/1604669904" target="_blank">
-    🍎 Apple Music
-  </a>
+    <a class="link-button" href="https://music.apple.com/us/artist/sound-shallows/1604669904" target="_blank">
+      🍎 Apple Music
+    </a>
 
+    <a class="link-button" href="https://soundshallows.bandcamp.com/" target="_blank">
+      🌀 Bandcamp
+    </a>
 
-  <a class="link-button" href="https://soundshallows.bandcamp.com/" target="_blank">
-    🌀 Bandcamp
-  </a>
+    <!-- Social Media -->
+    <a class="link-button" href="https://instagram.com/soundshallows" target="_blank">
+      📸 Instagram
+    </a>
 
-  <!-- Social Media -->
-  <a class="link-button" href="https://instagram.com/soundshallows" target="_blank">
-    📸 Instagram
-  </a>
+    <a class="link-button" href="https://tiktok.com/@sound.shallows" target="_blank">
+      🎵 TikTok
+    </a>
 
-  <a class="link-button" href="https://tiktok.com/@sound.shallows" target="_blank">
-    🎵 TikTok
-  </a>
+    <a class="link-button" href="https://twitter.com/SoundShallows" target="_blank">
+      🐦 Twitter
+    </a>
 
-  <a class="link-button" href="https://twitter.com/SoundShallows" target="_blank">
-    🐦 Twitter
-  </a>
+    <a class="link-button" href="https://bsky.app/profile/soundshallows.bsky.social" target="_blank">
+      🌤️ Bluesky
+    </a>
 
-  <a class="link-button" href="https://bsky.app/profile/soundshallows.bsky.social" target="_blank">
-    🌤️ Bluesky
-  </a>
+    <!-- Merch -->
+    <a class="link-button" href="https://soundshallows.creator-spring.com" target="_blank">
+      🛒 Webstore
+    </a>
 
-  <!-- Merch -->
-  <a class="link-button" href="https://soundshallows.creator-spring.com" target="_blank">
-    🛒 Webstore
-  </a>
+  </main>
 
-</div>
+  <!-- Footer -->
   <footer>
     © Sound Shallows
   </footer>
-<script>
-  const toggleBtn = document.getElementById('mode-toggle');
 
-  // Load saved mode
-  if (localStorage.getItem('mode') === 'neon') {
-    document.body.classList.add('neon-mode');
-    toggleBtn.textContent = 'Standard Mode';
-  }
+  <!-- Accessibility Panel Logic -->
+  <script>
+    const panelBtn = document.querySelector('.accessibility-toggle');
+    const panel = document.querySelector('.accessibility-panel');
 
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('neon-mode');
+    panelBtn.addEventListener('click', () => {
+      const isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
+      panelBtn.setAttribute('aria-expanded', !isOpen);
+    });
 
-    if (document.body.classList.contains('neon-mode')) {
-      localStorage.setItem('mode', 'neon');
-      toggleBtn.textContent = 'Standard Mode';
-    } else {
-      localStorage.setItem('mode', 'standard');
-      toggleBtn.textContent = 'Neon Mode';
+    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon-mode'];
+    modes.forEach(mode => {
+      if (localStorage.getItem(mode) === 'true') {
+        document.body.classList.add(mode);
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = true;
+      }
+    });
+
+    function toggleMode(mode) {
+      const checkbox = document.getElementById(`toggle-${mode}`);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          document.body.classList.add(mode);
+          localStorage.setItem(mode, 'true');
+        } else {
+          document.body.classList.remove(mode);
+          localStorage.setItem(mode, 'false');
+        }
+      });
     }
-  });
-</script> 
+
+    toggleMode('cb-safe');
+    toggleMode('reduced-glow');
+    toggleMode('high-contrast');
+    toggleMode('neon-mode');
+
+    document.getElementById('reset-accessibility').addEventListener('click', () => {
+      modes.forEach(mode => {
+        document.body.classList.remove(mode);
+        localStorage.setItem(mode, 'false');
+
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = false;
+      });
+    });
+  </script>
+
 </body>
 </html>
