@@ -154,7 +154,7 @@
       panelBtn.setAttribute('aria-expanded', !isOpen);
     });
 
-    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon'];
+    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon-mode'];
     modes.forEach(mode => {
       if (localStorage.getItem(mode) === 'true') {
         document.body.classList.add(mode);
@@ -179,7 +179,7 @@
     toggleMode('cb-safe');
     toggleMode('reduced-glow');
     toggleMode('high-contrast');
-    toggleMode('neon');
+    toggleMode('neon-mode');
 
     document.getElementById('reset-accessibility').addEventListener('click', () => {
       modes.forEach(mode => {
