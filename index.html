@@ -92,6 +92,8 @@
       <input type="checkbox" id="toggle-neon">
       Neon Mode
     </label>
+
+    <button id="reset-accessibility" class="reset-btn">Reset to Default</button>
   </div>
 
   <!-- Header -->
@@ -178,6 +180,16 @@
     toggleMode('reduced-glow');
     toggleMode('high-contrast');
     toggleMode('neon');
+
+    document.getElementById('reset-accessibility').addEventListener('click', () => {
+      modes.forEach(mode => {
+        document.body.classList.remove(mode);
+        localStorage.setItem(mode, 'false');
+
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = false;
+      });
+    });
   </script>
 
 </body>
