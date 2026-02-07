@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music • Sound Shallows</title>
+
+  <!-- SEO -->
+  <meta name="description" content="A curated introduction to Sound Shallows: featured tracks, latest releases, and a growing catalog of genre-fluid electronic music.">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sound Shallows — Music">
+  <meta property="og:description" content="A curated introduction to Sound Shallows: featured tracks, latest releases, and a growing catalog of genre-fluid electronic music.">
+  <meta property="og:image" content="https://soundshallows.ca/assets/img/logo.png">
+  <meta property="og:url" content="https://soundshallows.ca/music.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Shallows — Music">
+  <meta name="twitter:description" content="A curated introduction to Sound Shallows: featured tracks, latest releases, and a growing catalog of genre-fluid electronic music.">
+  <meta name="twitter:image" content="https://soundshallows.ca/assets/img/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/accessibility.css">
+  <link rel="stylesheet" href="assets/css/colorblind-safe.css">
+  <link rel="stylesheet" href="assets/css/accessibility-panel.css">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Panel Trigger + Panel -->
+  <div class="accessibility-toggle" aria-haspopup="true" aria-expanded="false">
+    ⚙ Accessibility
+  </div>
+
+  <div class="accessibility-panel" aria-label="Accessibility Options">
+    <h3>Accessibility Options</h3>
+
+    <label><input type="checkbox" id="toggle-cb-safe"> Colorblind‑Safe Mode</label>
+    <label><input type="checkbox" id="toggle-reduced-glow"> Reduced Glow Mode</label>
+    <label><input type="checkbox" id="toggle-high-contrast"> High Contrast Mode</label>
+    <label><input type="checkbox" id="toggle-neon-mode"> Neon Mode</label>
+
+    <button id="reset-accessibility" class="reset-btn">Reset to Default</button>
+  </div>
+
+  <!-- Header -->
+  <header role="banner">
+    <img src="assets/img/logo.png" alt="Sound Shallows Logo">
+    <h1>Music</h1>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="music.html" class="active" aria-current="page">Music</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="container">
+
+    <!-- ===========================
+         SECTION 1 — START HERE
+    ============================ -->
+    <h2>Start Here</h2>
+    <p>A curated selection of tracks that best introduce the Sound Shallows sound — across genres, moods, and eras.</p>
+
+    <!-- Example Card -->
+    <div class="song-card">
+      <img src="assets/img/album-placeholder.png" alt="Album Art" style="width:100%; border-radius:4px; margin-bottom:12px;">
+      <h3>Track Title</h3>
+      <p>A short description of the vibe, genre, and emotional tone.</p>
+
+      <div class="tag-row" style="margin:10px 0;">
+        <span class="tag">Ambient</span>
+        <span class="tag">Synthwave</span>
+        <span class="tag">Emotional</span>
+      </div>
+
+      <div class="stream-buttons" style="margin-top:12px;">
+        <a href="#" class="link-button" style="display:inline-block; margin-right:10px;">Spotify</a>
+        <a href="#" class="link-button" style="display:inline-block;">YouTube</a>
+      </div>
+    </div>
+
+    <span class="soft-divider"></span>
+
+    <!-- ===========================
+         SECTION 2 — LATEST RELEASES
+    ============================ -->
+    <h2>Latest Releases</h2>
+    <p>The newest additions to the Sound Shallows catalog.</p>
+
+    <div class="song-card">
+      <img src="assets/img/album-placeholder.png" alt="Album Art" style="width:100%; border-radius:4px; margin-bottom:12px;">
+      <h3>New Track Title</h3>
+      <p>Released: Jan 2026</p>
+      <p>A short description of the track.</p>
+
+      <div class="stream-buttons" style="margin-top:12px;">
+        <a href="#" class="link-button" style="display:inline-block; margin-right:10px;">Spotify</a>
+        <a href="#" class="link-button" style="display:inline-block;">YouTube</a>
+      </div>
+    </div>
+
+    <span class="soft-divider"></span>
+
+    <!-- ===========================
+         SECTION 3 — FULL CATALOG
+    ============================ -->
+    <h2>Full Catalog</h2>
+    <details>
+      <summary style="cursor:pointer; margin-bottom:10px;">Expand Catalog</summary>
+      <ul style="list-style:none; padding-left:0;">
+        <li>• Track Name (Year)</li>
+        <li>• Track Name (Year)</li>
+        <li>• Track Name (Year)</li>
+      </ul>
+    </details>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © Sound Shallows
+  </footer>
+
+  <!-- Accessibility Panel Logic -->
+  <script>
+    const panelBtn = document.querySelector('.accessibility-toggle');
+    const panel = document.querySelector('.accessibility-panel');
+
+    panelBtn.addEventListener('click', () => {
+      const isOpen = panel.style.display === 'block';
+      panel.style.display = isOpen ? 'none' : 'block';
+      panelBtn.setAttribute('aria-expanded', !isOpen);
+    });
+
+    const modes = ['cb-safe', 'reduced-glow', 'high-contrast', 'neon-mode'];
+    modes.forEach(mode => {
+      if (localStorage.getItem(mode) === 'true') {
+        document.body.classList.add(mode);
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = true;
+      }
+    });
+
+    function toggleMode(mode) {
+      const checkbox = document.getElementById(`toggle-${mode}`);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          document.body.classList.add(mode);
+          localStorage.setItem(mode, 'true');
+        } else {
+          document.body.classList.remove(mode);
+          localStorage.setItem(mode, 'false');
+        }
+      });
+    }
+
+    toggleMode('cb-safe');
+    toggleMode('reduced-glow');
+    toggleMode('high-contrast');
+    toggleMode('neon-mode');
+
+    document.getElementById('reset-accessibility').addEventListener('click', () => {
+      modes.forEach(mode => {
+        document.body.classList.remove(mode);
+        localStorage.setItem(mode, 'false');
+        const checkbox = document.getElementById(`toggle-${mode}`);
+        if (checkbox) checkbox.checked = false;
+      });
+    });
+  </script>
+
+</body>
+</html>
