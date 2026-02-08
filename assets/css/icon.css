@@ -462,7 +462,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
 }
 .energy-calm::after { content: "Calm"; }
 
