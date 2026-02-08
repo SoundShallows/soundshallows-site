@@ -41,161 +41,241 @@
 
 .genre-electronic::before {
   background-image: url("/icons/genres/icon-genre-electronic.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-electronic::after { content: "Electronic"; }
 
 .genre-ambient::before {
   background-image: url("/icons/genres/icon-genre-ambient.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-ambient::after { content: "Ambient"; }
 
 .genre-hybrid::before {
   background-image: url("/icons/genres/icon-genre-hybrid.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-hybrid::after { content: "Hybrid"; }
 
 .genre-industrial::before {
   background-image: url("/icons/genres/icon-genre-industrial.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-industrial::after { content: "Industrial"; }
 
 .genre-synthwave::before {
   background-image: url("/icons/genres/icon-genre-synthwave.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-synthwave::after { content: "Synthwave"; }
 
 .genre-dubstep::before {
   background-image: url("/icons/genres/icon-genre-dubstep.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-dubstep::after { content: "Dubstep"; }
 
 .genre-cinematic::before {
   background-image: url("/icons/genres/icon-genre-cinematic.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-cinematic::after { content: "Cinematic"; }
 
 .genre-alternative::before {
   background-image: url("/icons/genres/icon-genre-alternative.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-alternative::after { content: "Alternative"; }
 
 .genre-darkwave::before {
   background-image: url("/icons/genres/icon-genre-darkwave.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-darkwave::after { content: "Darkwave"; }
 
 .genre-postrock::before {
   background-image: url("/icons/genres/icon-genre-postrock.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-postrock::after { content: "Post-Rock"; }
 
 .genre-experimental::before {
   background-image: url("/icons/genres/icon-genre-experimental.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-experimental::after { content: "Experimental"; }
 
 .genre-grunge::before {
   background-image: url("/icons/genres/icon-genre-grunge.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-grunge::after { content: "Grunge"; }
 
 .genre-punk::before {
   background-image: url("/icons/genres/icon-genre-punk.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-punk::after { content: "Punk"; }
 
 .genre-classicrock::before {
   background-image: url("/icons/genres/icon-genre-classicrock.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-classicrock::after { content: "Classic Rock"; }
 
 .genre-metal::before {
   background-image: url("/icons/genres/icon-genre-metal.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-metal::after { content: "Metal"; }
 
 .genre-pop::before {
   background-image: url("/icons/genres/icon-genre-pop.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-pop::after { content: "Pop"; }
 
 .genre-comedy::before {
   background-image: url("/icons/genres/icon-genre-comedy.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-comedy::after { content: "Comedy"; }
 
 .genre-lofi::before {
   background-image: url("/icons/genres/icon-genre-lofi.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-lofi::after { content: "Lo-Fi"; }
 
 .genre-minimal::before {
   background-image: url("/icons/genres/icon-genre-minimal.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-minimal::after { content: "Minimal"; }
 
 .genre-soundtrack::before {
   background-image: url("/icons/genres/icon-genre-soundtrack.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  filter: invert(1);
 }
 .genre-soundtrack::after { content: "Soundtrack"; }
 
