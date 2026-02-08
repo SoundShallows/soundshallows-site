@@ -439,94 +439,113 @@
 .mood-warm::after { content: "Warm"; }
 
 /* ============================================
-   ENERGY ICONS (1–8)
+   ENERGY ICONS (1–9)
    ============================================ */
 
-/* Energy 1 — Single Bar */
-.energy-1::before {
-  clip-path: polygon(
-    40% 20%, 60% 20%, 60% 80%, 40% 80%
-  );
+.energy-sleepy::before {
+  background-image: url("/icons/energy/icon-energy-01-sleepy.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-1::after { content: "Energy 1"; }
+.energy-sleepy::after { content: "Sleepy"; }
 
-/* Energy 2 — Two Bars */
-.energy-2::before {
-  background: linear-gradient(
-    to right,
-    #000 0 40%,
-    var(--energy-accent) 40% 45%,
-    #000 45% 55%,
-    var(--energy-accent) 55% 60%,
-    #000 60% 100%
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.energy-calm::before {
+  background-image: url("/icons/energy/icon-energy-02-calm.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-2::after { content: "Energy 2"; }
+.energy-calm::after { content: "Calm"; }
 
-/* Energy 3 — Three Bars */
-.energy-3::before {
-  background: linear-gradient(
-    to right,
-    #000 0 30%,
-    var(--energy-accent) 30% 33%,
-    #000 33% 66%,
-    var(--energy-accent) 66% 69%,
-    #000 69% 100%
-  );
+.energy-warm::before {
+  background-image: url("/icons/energy/icon-energy-03-warm.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-3::after { content: "Energy 3"; }
+.energy-warm::after { content: "Warm"; }
 
-/* Energy 4 — Single Chevron */
-.energy-4::before {
-  clip-path: polygon(
-    20% 20%, 80% 50%, 20% 80%
-  );
-  border-right: 3px solid var(--energy-accent);
+.energy-chill::before {
+  background-image: url("/icons/energy/icon-energy-04-chill.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-4::after { content: "Energy 4"; }
+.energy-chill::after { content: "Chill"; }
 
-/* Energy 5 — Double Chevron */
-.energy-5::before {
-  clip-path: polygon(
-    10% 20%, 50% 50%, 10% 80%,
-    40% 20%, 80% 50%, 40% 80%
-  );
-  border-right: 3px solid var(--energy-accent);
+.energy-head-nod::before {
+  background-image: url("/icons/energy/icon-energy-05-head-nod.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-5::after { content: "Energy 5"; }
+.energy-head-nod::after { content: "Head-Nod"; }
 
-/* Energy 6 — Triple Chevron */
-.energy-6::before {
-  clip-path: polygon(
-    5% 20%, 35% 50%, 5% 80%,
-    30% 20%, 60% 50%, 30% 80%,
-    55% 20%, 95% 50%, 55% 80%
-  );
-  border-right: 3px solid var(--energy-accent);
+.energy-drive::before {
+  background-image: url("/icons/energy/icon-energy-06-drive.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-6::after { content: "Energy 6"; }
+.energy-drive::after { content: "Drive"; }
 
-/* Energy 7 — Quad Chevron (Tight) */
-.energy-7::before {
-  clip-path: polygon(
-    0% 20%, 25% 50%, 0% 80%,
-    20% 20%, 45% 50%, 20% 80%,
-    40% 20%, 65% 50%, 40% 80%,
-    60% 20%, 85% 50%, 60% 80%
-  );
-  border-right: 3px solid var(--energy-accent);
+.energy-heavy::before {
+  background-image: url("/icons/energy/icon-energy-07-heavy.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-7::after { content: "Energy 7"; }
+.energy-heavy::after { content: "Heavy"; }
 
-/* Energy 8 — Angular Burst */
-.energy-8::before {
-  clip-path: polygon(
-    50% 0%, 65% 20%, 100% 30%,
-    75% 50%, 100% 70%, 65% 80%,
-    50% 100%, 35% 80%, 0% 70%,
-    25% 50%, 0% 30%, 35% 20%
-  );
-  border-left: 3px solid var(--energy-accent);
+.energy-surge::before {
+  background-image: url("/icons/energy/icon-energy-08-surge.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
 }
-.energy-8::after { content: "Energy 8"; }
+.energy-surge::after { content: "Surge"; }
+
+.energy-full-tilt::before {
+  background-image: url("/icons/energy/icon-energy-09-full-tilt.svg");
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1);
+}
+.energy-full-tilt::after { content: "Full-Tilt"; }
