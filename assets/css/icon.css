@@ -450,7 +450,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-sleepy::after { content: "Sleepy"; }
 
@@ -474,7 +474,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-warm::after { content: "Warm"; }
 
@@ -486,7 +486,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-chill::after { content: "Chill"; }
 
@@ -498,7 +498,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-head-nod::after { content: "Head-Nod"; }
 
@@ -510,7 +510,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-drive::after { content: "Drive"; }
 
@@ -522,7 +522,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-heavy::after { content: "Heavy"; }
 
@@ -534,7 +534,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-surge::after { content: "Surge"; }
 
@@ -546,6 +546,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  filter: invert(1);
+  background-color: #000;  
 }
 .energy-full-tilt::after { content: "Full-Tilt"; }
