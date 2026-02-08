@@ -63,8 +63,8 @@
 }
 .genre-ambient::after { content: "Ambient"; }
 
-.genre-hybrid::before {
-  background-image: url("/icons/genres/icon-genre-hybrid.svg");
+.genre-underground::before {
+  background-image: url("/icons/genres/icon-genre-underground.svg");
   content: "";
   width: 28px;
   height: 28px;
@@ -73,7 +73,7 @@
   background-position: center;
   filter: invert(1);
 }
-.genre-hybrid::after { content: "Hybrid"; }
+.genre-underground::after { content: "Underground"; }
 
 .genre-industrial::before {
   background-image: url("/icons/genres/icon-genre-industrial.svg");
@@ -147,8 +147,8 @@
 }
 .genre-darkwave::after { content: "Darkwave"; }
 
-.genre-postrock::before {
-  background-image: url("/icons/genres/icon-genre-postrock.svg");
+.genre-club::before {
+  background-image: url("/icons/genres/icon-genre-club.svg");
   content: "";
   width: 28px;
   height: 28px;
@@ -157,7 +157,7 @@
   background-position: center;
   filter: invert(1);
 }
-.genre-postrock::after { content: "Post-Rock"; }
+.genre-club::after { content: "Club"; }
 
 .genre-experimental::before {
   background-image: url("/icons/genres/icon-genre-experimental.svg");
@@ -255,8 +255,8 @@
 }
 .genre-lofi::after { content: "Lo-Fi"; }
 
-.genre-minimal::before {
-  background-image: url("/icons/genres/icon-genre-minimal.svg");
+.genre-melodic::before {
+  background-image: url("/icons/genres/icon-genre-melodic.svg");
   content: "";
   width: 28px;
   height: 28px;
@@ -265,7 +265,7 @@
   background-position: center;
   filter: invert(1);
 }
-.genre-minimal::after { content: "Minimal"; }
+.genre-melodic::after { content: "Melodic"; }
 
 .genre-soundtrack::before {
   background-image: url("/icons/genres/icon-genre-soundtrack.svg");
