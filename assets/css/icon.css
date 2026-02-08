@@ -280,163 +280,32 @@
 .genre-soundtrack::after { content: "Soundtrack"; }
 
 /* ============================================
-   MOOD ICONS (Alphabetical)
+   MOOD 
    ============================================ */
 
-/* Dreamy — Cloud Facet */
-.mood-dreamy::before {
-  clip-path: polygon(
-    20% 40%, 35% 20%, 55% 20%, 70% 40%,
-    80% 60%, 70% 80%, 50% 90%, 30% 80%, 20% 60%
-  );
+.mood {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-right: 0.4rem;
 }
-.mood-dreamy::after { content: "Dreamy"; }
 
-/* Empowering — Strong Upward Hex */
-.mood-empowering::before {
-  clip-path: polygon(
-    30% 100%, 30% 40%, 50% 0%,
-    70% 40%, 70% 100%, 50% 80%
-  );
-  border-top: 3px solid var(--mood-accent);
+/* Positive moods */
+.mood--positive {
+  background-color: #2b2b2b; /* dark grey */
+  color: #eaeaea;
 }
-.mood-empowering::after { content: "Empowering"; }
 
-/* Euphoric — Burst Facet */
-.mood-euphoric::before {
-  clip-path: polygon(
-    50% 0%, 65% 20%, 100% 30%,
-    75% 50%, 100% 70%, 65% 80%,
-    50% 100%, 35% 80%, 0% 70%,
-    25% 50%, 0% 30%, 35% 20%
-  );
-  border-left: 3px solid var(--mood-accent);
+/* Negative moods */
+.mood--negative {
+  background-color: #1a0f1f; /* purple-black */
+  color: #ffffff;
+  outline: 2px solid #ffffff;
+  outline-offset: -2px;
 }
-.mood-euphoric::after { content: "Euphoric"; }
-
-/* Gritty — Rough Facet Block */
-.mood-gritty::before {
-  clip-path: polygon(
-    0% 0%, 100% 0%, 100% 70%,
-    70% 70%, 70% 100%, 0% 100%
-  );
-}
-.mood-gritty::after { content: "Gritty"; }
-
-/* Haunting — Hollow Diamond */
-.mood-haunting::before {
-  clip-path: polygon(
-    50% 0%, 85% 50%, 50% 100%, 15% 50%
-  );
-  background: #fff;
-  box-shadow: inset 0 0 0 6px var(--mood-accent);
-}
-.mood-haunting::after { content: "Haunting"; }
-
-/* Hopeful — Upward Soft Triangle */
-.mood-hopeful::before {
-  clip-path: polygon(
-    50% 0%, 90% 100%, 10% 100%
-  );
-  border-top: 3px solid var(--mood-accent);
-}
-.mood-hopeful::after { content: "Hopeful"; }
-
-/* Introspective — Inner Circle Facet */
-.mood-introspective::before {
-  clip-path: polygon(
-    50% 0%, 80% 20%, 100% 50%,
-    80% 80%, 50% 100%, 20% 80%,
-    0% 50%, 20% 20%
-  );
-  box-shadow: inset 0 0 0 4px var(--mood-accent);
-}
-.mood-introspective::after { content: "Introspective"; }
-
-/* Melancholic — Angular Teardrop */
-.mood-melancholic::before {
-  clip-path: polygon(
-    50% 0%, 80% 40%, 80% 70%,
-    50% 100%, 20% 70%, 20% 40%
-  );
-}
-.mood-melancholic::after { content: "Melancholic"; }
-
-/* Mysterious — Crescent Angular */
-.mood-mysterious::before {
-  clip-path: polygon(
-    30% 0%, 100% 0%, 100% 100%, 30% 100%,
-    0% 50%
-  );
-}
-.mood-mysterious::after { content: "Mysterious"; }
-
-/* Nostalgic — Rounded Hexagon */
-.mood-nostalgic::before {
-  clip-path: polygon(
-    30% 0%, 70% 0%, 100% 30%,
-    100% 70%, 70% 100%, 30% 100%,
-    0% 70%, 0% 30%
-  );
-}
-.mood-nostalgic::after { content: "Nostalgic"; }
-
-/* Reflective — Soft Diamond */
-.mood-reflective::before {
-  clip-path: polygon(
-    50% 0%, 85% 50%, 50% 100%, 15% 50%
-  );
-  border-left: 3px solid var(--mood-accent);
-}
-.mood-reflective::after { content: "Reflective"; }
-
-/* Seductive — Soft Heart Facet */
-.mood-seductive::before {
-  clip-path: polygon(
-    50% 90%, 10% 50%, 10% 30%,
-    30% 10%, 50% 30%, 70% 10%,
-    90% 30%, 90% 50%
-  );
-}
-.mood-seductive::after { content: "Seductive"; }
-
-/* Somber — Downward Soft Triangle */
-.mood-somber::before {
-  clip-path: polygon(
-    10% 0%, 90% 0%, 50% 100%
-  );
-}
-.mood-somber::after { content: "Somber"; }
-
-/* Tense — Tight Angular Knot */
-.mood-tense::before {
-  clip-path: polygon(
-    20% 20%, 80% 20%, 80% 40%,
-    60% 40%, 60% 60%, 80% 60%,
-    80% 80%, 20% 80%, 20% 60%,
-    40% 60%, 40% 40%, 20% 40%
-  );
-}
-.mood-tense::after { content: "Tense"; }
-
-/* Uplifting — Rising Soft Chevron */
-.mood-uplifting::before {
-  clip-path: polygon(
-    0% 60%, 50% 20%, 100% 60%,
-    80% 80%, 50% 50%, 20% 80%
-  );
-  border-top: 3px solid var(--mood-accent);
-}
-.mood-uplifting::after { content: "Uplifting"; }
-
-/* Warm — Rounded Trapezoid */
-.mood-warm::before {
-  clip-path: polygon(
-    20% 20%, 80% 20%, 100% 80%,
-    0% 80%
-  );
-}
-.mood-warm::after { content: "Warm"; }
 
 /* ============================================
    ENERGY ICONS (1–9)
