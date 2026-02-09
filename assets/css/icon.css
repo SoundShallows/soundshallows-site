@@ -14,22 +14,28 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
-  line-height: 1;
   color: #fff; /* Text color — adjust to your theme */
 }
 
 
 /* Icon Container */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .tag::before {
   content: "";
   width: 28px;
   height: 28px;
-  background: #fff; /* Primary black fill */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
   display: inline-block;
   vertical-align: middle;
-  line-height: 0;  
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Default square */
+  line-height: 0;
 }
 
 /* Auto-injected label */
@@ -287,14 +293,8 @@
    ============================================ */
 .mood {
   display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.6rem;
-  gap: 6px;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 4px;
-  margin-right: 0.4rem;  
+  align-items: center;
 }
 
 /* Positive moods */
