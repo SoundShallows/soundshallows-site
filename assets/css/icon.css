@@ -4,23 +4,24 @@
 
 /* Category Accent Colors */
 :root {
-  --genre-accent: #4A6FA5;   /* Cool slate blue */
-  --mood-accent: #C9A44C;    /* Warm gold */
-  --energy-accent: #C46A3A;  /* Rust / warm neutral */
+  --tag-height: 28px;
+  --tag-padding-y: 0.25rem;
+  --tag-padding-x: 0.6rem;
 }
 
 /* Base Tag Layout */
-.tag {
-  align-items: center;
-  gap: 6px;
-  color: #fff; /* Text color — adjust to your theme */
+.tag,
+.mood {
   display: inline-flex;
-  padding: 0.25rem 0.6rem;
+  align-items: center;
+  padding: var(--tag-padding-y) var(--tag-padding-x);
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   border-radius: 4px;
   margin-right: 0.4rem;
+  line-height: 1; 
 }
+
 
 /* Icon Container */
 .tag::before {
@@ -285,17 +286,6 @@
 /* ============================================
    MOOD 
    ============================================ */
-
-.mood {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.6rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  border-radius: 4px;
-  margin-right: 0.4rem;
-}
 
 /* Positive moods */
 .mood--positive {
