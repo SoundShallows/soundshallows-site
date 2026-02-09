@@ -26,10 +26,10 @@
 /* Icon Container */
 .tag::before {
   content: "";
-  width: 28px;
-  height: 28px;
-  background: #fff; /* Primary black fill */
+  width: var(--tag-height);
+  height: var(--tag-height);
   display: inline-block;
+  background: #fff; /* Primary black fill */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Default square */
 }
 
