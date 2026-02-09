@@ -305,7 +305,7 @@
 
 .mood::before {
   content: "";
-  width: 28px;
+  width: 0px;
   height: 28px;
   display: inline-block;
 }
