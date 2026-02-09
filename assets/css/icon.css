@@ -302,6 +302,13 @@
   margin-left: 0.4rem;    
 }
 
+.mood::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
 /* Positive moods */
 .mood--positive {
   background-color: #2b2b2b; /* dark grey */
