@@ -27,6 +27,8 @@
   height: 28px;
   background: #fff; /* Primary black fill */
   display: inline-block;
+  vertical-align: middle;
+  line-height: 0;  
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Default square */
 }
 
